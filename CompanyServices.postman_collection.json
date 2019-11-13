@@ -1,0 +1,598 @@
+{
+	"info": {
+		"_postman_id": "7423ac89-b925-4d5f-ab92-5e4e5856e9ce",
+		"name": "341 Project 2",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Departments",
+			"item": [
+				{
+					"name": "Get Department",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/LiuXinXLRestFinal/resources/CompanyServices/department?company=xl4998&dept_id=1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"LiuXinXLRestFinal",
+								"resources",
+								"CompanyServices",
+								"department"
+							],
+							"query": [
+								{
+									"key": "company",
+									"value": "xl4998"
+								},
+								{
+									"key": "dept_id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Departments",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/LiuXinXLRestFinal/resources/CompanyServices/departments?company=xl4998",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"LiuXinXLRestFinal",
+								"resources",
+								"CompanyServices",
+								"departments"
+							],
+							"query": [
+								{
+									"key": "company",
+									"value": "xl4998"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Department",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"company\": \"xl4998\",\n\t\"dept_id\": 26,\n\t\"dept_name\": \"Engineering\",\n\t\"dept_no\": \"xl49981\",\n\t\"location\": \"rochester\"\n}"
+						},
+						"url": {
+							"raw": "localhost:8080/LiuXinXLRestFinal/resources/CompanyServices/department",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"LiuXinXLRestFinal",
+								"resources",
+								"CompanyServices",
+								"department"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Department",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "company",
+									"value": "xl4998",
+									"type": "text"
+								},
+								{
+									"key": "dept_name",
+									"value": "Engineering",
+									"type": "text"
+								},
+								{
+									"key": "dept_no",
+									"value": "xl49981",
+									"type": "text"
+								},
+								{
+									"key": "location",
+									"value": "Rochester",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8080/LiuXinXLRestFinal/resources/CompanyServices/department",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"LiuXinXLRestFinal",
+								"resources",
+								"CompanyServices",
+								"department"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Department",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/LiuXinXLRestFinal/resources/CompanyServices/department?company=xl4998&dept_id=26",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"LiuXinXLRestFinal",
+								"resources",
+								"CompanyServices",
+								"department"
+							],
+							"query": [
+								{
+									"key": "company",
+									"value": "xl4998"
+								},
+								{
+									"key": "dept_id",
+									"value": "26"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Employees",
+			"item": [
+				{
+					"name": "Get Employee",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/LiuXinXLRestFinal/resources/CompanyServices/employee?company=xl4998&emp_id=1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"LiuXinXLRestFinal",
+								"resources",
+								"CompanyServices",
+								"employee"
+							],
+							"query": [
+								{
+									"key": "company",
+									"value": "xl4998"
+								},
+								{
+									"key": "emp_id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Employees",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/LiuXinXLRestFinal/resources/CompanyServices/employees?company=xl4998",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"LiuXinXLRestFinal",
+								"resources",
+								"CompanyServices",
+								"employees"
+							],
+							"query": [
+								{
+									"key": "company",
+									"value": "xl4998"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Employees",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n   \"company\": \"xl4998\",\n   \"emp_id\": 16,\n   \"emp_name\": \"french\",\n   \"emp_no\": \"rituserid-e1b\",\n   \"hire_date\": \"2019-05-20\",\n   \"job\": \"programmer\",\n   \"salary\": 6000.0,\n   \"dept_id\": 1,\n   \"mng_id\": 1\n}"
+						},
+						"url": {
+							"raw": "localhost:8080/LiuXinXLRestFinal/resources/CompanyServices/employee",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"LiuXinXLRestFinal",
+								"resources",
+								"CompanyServices",
+								"employee"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Employee",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "company",
+									"value": "xl4998",
+									"type": "text"
+								},
+								{
+									"key": "emp_name",
+									"value": "garbage",
+									"type": "text"
+								},
+								{
+									"key": "emp_no",
+									"value": "xl49983",
+									"type": "text"
+								},
+								{
+									"key": "hire_date",
+									"value": "2019-11-08",
+									"type": "text"
+								},
+								{
+									"key": "job",
+									"value": "Garbage Man",
+									"type": "text"
+								},
+								{
+									"key": "salary",
+									"value": "0",
+									"type": "text"
+								},
+								{
+									"key": "dept_id",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "mng_id",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8080/LiuXinXLRestFinal/resources/CompanyServices/employee",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"LiuXinXLRestFinal",
+								"resources",
+								"CompanyServices",
+								"employee"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Employee",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/LiuXinXLRestFinal/resources/CompanyServices/employee?company=xl4998&emp_id=15",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"LiuXinXLRestFinal",
+								"resources",
+								"CompanyServices",
+								"employee"
+							],
+							"query": [
+								{
+									"key": "company",
+									"value": "xl4998"
+								},
+								{
+									"key": "emp_id",
+									"value": "15"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Timecards",
+			"item": [
+				{
+					"name": "Get Timecard",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/LiuXinXLRestFinal/resources/CompanyServices/timecard?company=xl4998&timecard_id=3",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"LiuXinXLRestFinal",
+								"resources",
+								"CompanyServices",
+								"timecard"
+							],
+							"query": [
+								{
+									"key": "company",
+									"value": "xl4998"
+								},
+								{
+									"key": "timecard_id",
+									"value": "3"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Timecards",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/LiuXinXLRestFinal/resources/CompanyServices/timecards?company=xl4998&emp_id=1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"LiuXinXLRestFinal",
+								"resources",
+								"CompanyServices",
+								"timecards"
+							],
+							"query": [
+								{
+									"key": "company",
+									"value": "xl4998"
+								},
+								{
+									"key": "emp_id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Timecard",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"company\": \"xl4998\",\n\t\"timecard_id\": 3,\n\t\"start_time\": \"2019-11-10 12:34:56\",\n\t\"end_time\": \"2019-11-10 13:34:56\",\n\t\"emp_id\": 1\n}"
+						},
+						"url": {
+							"raw": "localhost:8080/LiuXinXLRestFinal/resources/CompanyServices/timecard",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"LiuXinXLRestFinal",
+								"resources",
+								"CompanyServices",
+								"timecard"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Timecard",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "company",
+									"value": "xl4998",
+									"type": "text"
+								},
+								{
+									"key": "emp_id",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "start_time",
+									"value": "2019-11-07 8:12:59",
+									"type": "text"
+								},
+								{
+									"key": "end_time",
+									"value": "2019-11-07 9:12:59",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8080/LiuXinXLRestFinal/resources/CompanyServices/timecard",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"LiuXinXLRestFinal",
+								"resources",
+								"CompanyServices",
+								"timecard"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Timecard",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/LiuXinXLRestFinal/resources/CompanyServices/timecard?company=xl4998&timecard_id=3",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"LiuXinXLRestFinal",
+								"resources",
+								"CompanyServices",
+								"timecard"
+							],
+							"query": [
+								{
+									"key": "company",
+									"value": "xl4998"
+								},
+								{
+									"key": "timecard_id",
+									"value": "3"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Delete Company",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/LiuXinXLRestFinal/resources/CompanyServices/company?company=xl4998",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"LiuXinXLRestFinal",
+						"resources",
+						"CompanyServices",
+						"company"
+					],
+					"query": [
+						{
+							"key": "company",
+							"value": "xl4998"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

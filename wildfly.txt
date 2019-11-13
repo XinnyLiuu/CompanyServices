@@ -1,0 +1,3 @@
+jar cvf LiuXinXLRestFinal.war WEB-INF/
+
+cd /opt/wildfly-18.0.0.Final/bin/ && sudo ./standalone.sh
