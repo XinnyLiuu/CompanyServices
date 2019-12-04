@@ -104,12 +104,6 @@
             <artifactId>jackson-databind</artifactId>
             <version>2.10.0</version>
         </dependency>
-
-        <dependency>
-            <groupId>com.xl4998.CompanyData</groupId>
-            <artifactId>CompanyData</artifactId>
-            <version>1.0.0</version>
-        </dependency>
     </dependencies>
 
     <groupId>com.xinnliuu.CompanyServices</groupId>

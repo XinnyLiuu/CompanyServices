@@ -31,14 +31,14 @@ class P2Tester {
 	/**** NOTE: This file does NOT test all boundaries and all validations ****/
 
 	public static void main(String[] args) {
-		if (args.length != 2) {
-			System.out.println("Usage: \"base context\" \"company name\"");
-			System.exit(1);
-		}
+//		if (args.length != 2) {
+//			System.out.println("Usage: \"base context\" \"company name\"");
+//			System.exit(1);
+//		}
 
 		try {
-			String baseUrl = "http://localhost:8080/" + args[0] + "/resources/CompanyServices/";
-			String company = args[1];
+			String baseUrl = "http://localhost:8080/" + "LiuXinXLRestFinal" + "/resources/CompanyServices/";
+			String company = "xl4998";
 
 			HttpClient client = HttpClientBuilder.create().build();
 			HttpPost postRequest;

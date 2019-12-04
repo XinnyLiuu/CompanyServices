@@ -1,11 +1,6 @@
 package api.business;
 
 import api.utils.Constants;
-import companydata.Department;
-import companydata.Employee;
-import companydata.Timecard;
-
-import java.util.List;
 
 public class CompanyBusiness extends BusinessLayer {
 	public CompanyBusiness() {
@@ -20,28 +15,10 @@ public class CompanyBusiness extends BusinessLayer {
 	 */
 	public boolean deleteAll(String company) {
 		if (company.equals(Constants.USERNAME)) {
-			// Grab all the dta from every table
-			List<Department> departments = dl.getAllDepartment(company);
-			List<Employee> employees = dl.getAllEmployee(company);
+			int affected = dl.deleteCompany(Constants.USERNAME);
 
-			employees.forEach(e -> {
-				dl.deleteEmployee(e.getId());
-
-				List<Timecard> timecards = dl.getAllTimecard(e.getId());
-				timecards.forEach(t -> {
-					dl.deleteTimecard(t.getId());
-				});
-			});
-
-			departments.forEach(d -> {
-				dl.deleteDepartment(company, d.getId());
-			});
-
-			// Check final size of lists
-			departments = dl.getAllDepartment(company);
-			employees = dl.getAllEmployee(company);
-
-			if (departments.size() == 0 && employees.size() == 0) return true;
+			if(affected == 0) return true;
+			else if(affected > 0) return true;
 		}
 
 		return false;
