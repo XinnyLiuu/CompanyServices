@@ -5,6 +5,8 @@ A Java RESTful web service built with JAX-RS that performs CRUD on a campus data
 ## Usage
 This project has been built and tested locally with __[Wildfly](https://wildfly.org/)__ and the instructions below are based as such.
 
+- Install wildfly onto the host machine.
+
 - Follow the instructions in `wildfly.txt` to create the war file and start the Wildfly server.
 
 - Deploy the war file via the management console of Wildfly.
